@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1559787186488.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "27C0320",
+    "lastKnownWriteTime" : 1559787081,
+    "last_content_update" : 1559787186488,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "id" : "f95945cdddb746ccbb76f715466c0743",
+        "name" : "regressor",
+        "title" : "regressor"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "object_explorer"
+}
