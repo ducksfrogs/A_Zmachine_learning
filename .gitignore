@@ -1,4 +1,5 @@
 data/
 rproj/.Rproj.user/
 py/.ipynb_checkpoints/
+py/.idea
 .Rproj.user
