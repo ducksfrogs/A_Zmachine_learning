@@ -19,3 +19,13 @@ regressor2 = lm(formula = Profit ~ R.D.Spend,
 y_pred = predict(regressor, newdata = test_set)
 
 y_pred2 = predict(regressor2, newdata = test_set)
+
+regressor3 = lm(formula = Profit ~ R.D.Spend +
+                                  Administration+ Marketing.Spend + State,
+                data = dataset)
+summary(regressor3)
+
+
+regressor3 = lm(formula = Profit ~ R.D.Spend +
+                                  Administration+ Marketing.Spend ,
+                data = dataset)
