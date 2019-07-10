@@ -1,30 +1,18 @@
 dataset = read.csv('../data/Salary_Data.csv')
 library(caTools)
 install.packages('caTools')
-help(catools)
-?catools
-??catools
-library(caTools)
 set.seed(123)
 split = sample.split(dataset$Salary, SplitRatio = 2/3)
 training_set = subset(dataset, split== TRUE)
 test_set = subset(dataset, split==TRUE)
-View(test_set)
-View(training_set)
 regressor = lm(formula = Salary~YearsExperience,
 data = training_set)
-View(regressor)
-View(regressor)
 y_pred = predict(regressor,newdata = test_set)
-View(test_set)
-y_pred
 test_set = subset(dataset, split==FALSE)
 regressor = lm(formula = Salary~YearsExperience,
 data = training_set)
 y_pred = predict(regressor,newdata = test_set)
-y_pred
 install.packages('ggplot2')
-library(ggplot2)
 ggplot() +
 geom_point(aes(x= training_set$YearsExperience,
 y=training_set$Salary),
@@ -36,20 +24,19 @@ color = 'blue') +
 ggtitle('Salary vs Experiance (training set)') +
 xlab('years of experience') +
 ylab('Salary')
-View(training_set)
 ggplot() +
 geom_point(aes(x= training_set$YearsExperience,
 y=training_set$Salary),
 color = 'red') +
 geom_line(aes(x = training_set$YearsExperience,
 y = predict(regressor, newdata = training_set)
-),
 color = 'blue') +
 ggtitle('Salary vs Experiance (training set)') +
 xlab('years of experience') +
 ylab('Salary')
 ggplot() +
 geom_point(aes(x= test_set$YearsExperience,
+y=test_set$Salary),
 y=test_set$Salary),
 color = 'red') +
 geom_line(aes(x = training_set$YearsExperience,
