@@ -1,4 +1,6 @@
 rproj/.Rproj.user/*
 py/.ipynb_checkpoints/
 py/.idea
+pycode/.idea
 .Rproj.user
+pycode/venv/
